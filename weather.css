@@ -115,6 +115,10 @@ header{
     animation: img 25s alternate infinite;
 }
 @keyframes img {
+     0%{
+        background: black url("sunny.gif") no-repeat;
+        background-size: cover;
+    }
     25%{
         background: black url("sunny.gif") no-repeat;
         background-size: cover;
