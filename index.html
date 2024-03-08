@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="shortcut icon" href="weather_app.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    
+    <header>
+        <h1 class="head-txt">Weather Info</h1>
+    </header>
+    
+    <!-- Input Area -->
+    
+    <div class="input-area">
+        <input type="search" id="cityInput" placeholder="Enter your city name">
+        <i class="fa-solid fa-magnifying-glass" id="showWeather"></i>
+    </div>
+    
+    <!-- App -->
+    
+    <div class="app">
+        <div class="app_2">
+            <div class="app_3">
+                <img id="weatherImg"/>
+                <div class="controls">
+                    <div class="city">
+                        <label>City</label>
+                        <div class="cityBox" id="city"></div>
+                    </div>
+                    <div class="temp">
+                        <label>Temperature</label>
+                        <div class="tempBox" id="temp"></div>
+                    </div>
+                    <br>
+                    <div class="humidity">
+                        <label>Humidity</label>
+                        <div class="humidityBox" id="humidity">70%</div>
+                    </div>
+                    <div class="wind">
+                        <label>Wind Speed</label>
+                        <div class="windSpeedBox" id="windSpeed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="app_4">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <h1>&copy MADE BY IFRAT</h1>
+    </footer>
+    
+    <script src="weather.js"></script>
+</body>
+</html>

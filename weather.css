@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: black url("butterfly.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+.head-txt{
+    text-transform: uppercase;
+    background: url('xyz.png') no-repeat;
+    color: transparent;
+    background-clip: text;
+    letter-spacing: 2.5px;
+    background-size: cover;
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    background-position: center;
+    font-family: "Arial";
+}
+.input-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    border-radius: 25px;
+    background: rgba(0,0,0,0.3);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid cyan;
+}
+.input-area input{
+    display: inline-block;
+    height: 100%;
+    padding: 10px 15px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    outline: none;
+    width: 90%;
+    background: transparent;
+    margin-left: 1.5px;
+    color: white;
+    text-transform: uppercase;
+}
+.input-area input::placeholder{
+    color: whitesmoke;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.input-area i{
+    display: inline-block;
+    padding: 10px;
+    background: white;
+    margin-right: 1.5px;
+    border-radius: 50%;
+}
+.app{
+    width: 350px;
+    height: 350px;
+    background: #3F424E;
+    border-radius: 50%;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app_2{
+    width: 315px;
+    height: 315px;
+    background: #2E313A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 2px 2px 0 black;
+}
+.app_3{
+    width: 275px;
+    height: 275px;
+    background: #2E313A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+   /* position: absolute;*/
+    overflow: hidden;
+}
+.app_3 img{
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+    animation: img 25s alternate infinite;
+}
+@keyframes img {
+    25%{
+        background: black url("sunny.gif") no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: black url("drizzling.gif") no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background: black url("mist.gif") no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: black url("raining.gif") no-repeat;
+        background-size: cover;
+    }
+}
+.controls{
+    width: 100%;
+    height: 50%;
+    background: #2E313A;
+}
+.app_4{
+    width: 275px;
+    height: 275px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset 1px 0.4px 5px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app_4 hr{
+    width: 101%;
+    height: 6.5%;
+    background: #2E313A;
+    border: none;
+    border-bottom: 2.5px solid black;
+}
+.city{
+    margin: 10px auto;
+    position: relative;
+    width: 40%;
+    display: inline-block;
+    height: 20%;
+    margin-left: 27.5px;
+}
+.city :is(label,div){
+    display: block;
+}
+.city label{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white,
+                 0 0 80px white;
+}
+.city div{
+    width: 100%;
+    height: 80%;
+    background: #2E313A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+    text-shadow: 0 0 10px cyan,
+                 0 0 20px cyan,
+                 0 0 40px cyan,
+                 0 0 80px cyan;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    box-shadow: inset 0.1px 0.1px 2px 2px black;
+}
+
+.temp{
+    margin: 10px auto;
+    position: relative;
+    width: 35%;
+    height: 20%;
+    display: inline-block;
+    margin-left: 15px;
+}
+.temp :is(label,div){
+    display: block;
+}
+.temp label{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white,
+                 0 0 80px white;
+}
+.temp div{
+    width: 100%;
+    height: 80%;
+    background: #2E313A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+    text-shadow: 0 0 10px cyan,
+                 0 0 20px cyan,
+                 0 0 40px cyan,
+                 0 0 80px cyan;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    box-shadow: inset 0.1px 0.1px 2px 2px black;
+}
+.humidity{
+    margin: 10px auto;
+    position: relative;
+    width: 25%;
+    height: 20%;
+    display: inline-block;
+    margin-left: 47.5px;
+}
+.humidity :is(label,div){
+    display: block;
+}
+.humidity label{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white,
+                 0 0 80px white;
+}
+.humidity div{
+    width: 100%;
+    height: 80%;
+    background: #2E313A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+    text-shadow: 0 0 10px cyan,
+                 0 0 20px cyan,
+                 0 0 40px cyan,
+                 0 0 80px cyan;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    box-shadow: inset 0.1px 0.1px 2px 2px black;
+}
+.wind{
+    margin: 10px auto;
+    position: relative;
+    width: 35%;
+    height: 20%;
+    display: inline-block;
+    margin-left: 15px;
+}
+.wind :is(label,div){
+    display: block;
+}
+.wind label{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white,
+                 0 0 80px white;
+}
+.wind div{
+    width: 100%;
+    height: 80%;
+    background: #2E313A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+    text-shadow: 0 0 10px cyan,
+                 0 0 20px cyan,
+                 0 0 40px cyan,
+                 0 0 80px cyan;
+    text-transform: uppercase;
+    font-size: 12.5px;
+    box-shadow: inset 0.1px 0.1px 2px 2px black;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    bottom: 0;
+}
+footer h1{
+    text-transform: uppercase;
+    background: url('night.png') no-repeat;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    letter-spacing: 2.5px;
+    background-size: cover;
+    font-weight: bolder;
+    background-position: center;
+    font-family: "Arial";
+}
