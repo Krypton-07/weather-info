@@ -112,29 +112,6 @@ header{
     width: 100%;
     height: 50%;
     display: inline-block;
-    animation: img 25s alternate infinite;
-}
-@keyframes img {
-     0%{
-        background: black url("sunny.gif") no-repeat;
-        background-size: cover;
-    }
-    25%{
-        background: black url("sunny.gif") no-repeat;
-        background-size: cover;
-    }
-    50%{
-        background: black url("drizzling.gif") no-repeat;
-        background-size: cover;
-    }
-    75%{
-        background: black url("mist.gif") no-repeat;
-        background-size: cover;
-    }
-    100%{
-        background: black url("raining.gif") no-repeat;
-        background-size: cover;
-    }
 }
 .controls{
     width: 100%;
