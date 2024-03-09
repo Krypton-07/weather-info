@@ -62,9 +62,8 @@
 
     showWeather.onclick = async function weather() {
         let apiKey = "b6e9d683c6d84e19c1222f44be25ce03";
-        let x = "http:/";
         let cityInput = document.getElementById("cityInput").value;
-        let apiUrl = `${x}/api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}&units=metric`;
+        let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}&units=metric`;
         let response = await fetch(apiUrl);
         let data = await response.json();
         let city = document.getElementById("city");
